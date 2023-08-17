@@ -52,6 +52,10 @@ npm run start
 
 6. Access the API at the default URL: http://localhost:80
 
+### Postman Collection
+
+An exported Postman collection is available in the documentation folder. You can import this collection into your Postman app to easily interact with the API endpoints.
+
 ### Notes
 
 - Make sure you have Docker and Docker Compose installed before proceeding.
