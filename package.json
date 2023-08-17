@@ -1,0 +1,36 @@
+{
+  "name": "express-mongoose-js",
+  "version": "0.0.1",
+  "type": "commonjs",
+  "scripts": {
+    "start": "cross-env ENV_PATH=environments/.env nodemon index.js",
+    "test": "env-cmd node test.js",
+    "db:up": "docker-compose -f docker-compose.yml up -d",
+    "db:down": "docker-compose -f docker-compose.yml down"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "glob": "^10.3.3",
+    "jsonwebtoken": "^9.0.1",
+    "lodash": "^4.17.21",
+    "module-alias": "^2.2.3",
+    "mongoose": "^7.4.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@app": "app",
+    "@config": "config",
+    "@common": "app/common",
+    "@logger": "app/common/logger",
+    "@policies": "app/policies"
+  }
+}

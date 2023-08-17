@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@root/*": ["./*"],
+      "@app/*": ["./app/*"],
+      "@config/*": ["./config/*"],
+      "@common": ["./app/common/index.js"],
+      "@logger": ["./app/common/logger/index.js"],
+      "@policies": ["app/policies/index.js"]
+    }
+  }
+}
